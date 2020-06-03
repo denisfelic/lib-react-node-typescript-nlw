@@ -1,21 +1,15 @@
 import express from 'express';
+import routes from './rotas';
+import path from 'path';
+import cors from 'cors';
 
-console.log('Try connect');
-const app = express();
 
-app.get('/users', (request, response) => {
-    console.log('Conexão estabelecida.');
-    console.log(request.statusCode);
-    const data = [
-        {
-            'name': 'Denis',
-            'phone': '129412949',
-            'city': 'São Paulo',
-            'Country': 'Brazil',
-        }
-    ];
+const app = express();  
+app.use(cors());
+app.use(express.json());    // habilita express para enter REST e receber JSON no Body das requests.
+app.use(routes);
 
-    return response.json(data);
-});
+app.use("/uploads", express.static(path.resolve(__dirname, '..', 'uploads')));
 
-app.listen(3000);
+
+app.listen(3333);

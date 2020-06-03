@@ -1,0 +1,31 @@
+{
+    "points": [
+        {
+            "image": "url...",
+            "name": "name...",
+            "email": "email...",
+            "whatsapp": "...",
+            "address": {
+                "latitude": "...",
+                "longitude": "...",
+                "city": "...",
+                "uf": "...",
+                "street": "...",
+                "number": "...",
+                "cep": "..."
+            }
+        }
+    ],
+    "items": [
+        {
+            "image": "image...",
+            "title": "title..."
+        }
+    ],
+    "points_items": [
+        {
+            "point_id": "point_id...",
+            "item_id": "item_id..."
+        }
+    ]
+}
