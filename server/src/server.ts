@@ -11,5 +11,5 @@ app.use(routes);
 
 app.use("/uploads", express.static(path.resolve(__dirname, '..', 'uploads')));
 
-
+console.log('Rodando o servidor.');
 app.listen(3333);
