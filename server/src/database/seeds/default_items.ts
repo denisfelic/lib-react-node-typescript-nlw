@@ -7,6 +7,6 @@ export async function seed(knex: Knex) {
         {   image : 'papeis-papelao.svg' , title: 'Papéis e Papelão'},
         {   image : 'eletronicos.svg' , title: 'Resíduos Elêtronicos'},
         {   image : 'organicos.svg' , title: 'Resíduos Orgânicos'},
-        {   image : 'oleos.svg' , title: 'Óleos'},
+        {   image : 'oleo.svg' , title: 'Óleos'},
     ]);
 }

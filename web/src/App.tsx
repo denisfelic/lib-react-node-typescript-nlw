@@ -1,24 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import Header from './Header';
 
+import Routes from './routes';
 
 function App() {
-  //Desestruturação para pegar os dois indicês do Array.
-  const [count, setCount] = useState(0);  //Return array[valor do estado, função para atualizar];
 
   return (
     <div>
-      <Header title={`O próximo valor sera: ${(count+1)}`} />
-
-      <p>{count}</p>
-      <button onClick={contIncrement} >Incrementar</button>
+      <Routes />
     </div>
   );
 
-  function contIncrement() {
-    setCount(count+1);
-  }
 };
 
 

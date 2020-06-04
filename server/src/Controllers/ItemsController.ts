@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import knexConnection from 'knex';
+import knexConnection from '../database/connection';
 
 class ItemsController {
 
