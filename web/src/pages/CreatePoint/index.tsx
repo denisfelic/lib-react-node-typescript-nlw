@@ -120,7 +120,6 @@ const CreatePoints = () => {
         const uf = selectedUf;
 
         const myData = {
-            image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60",
             name: name,
             email: email,
             whatsapp: whatsapp,
@@ -128,13 +127,13 @@ const CreatePoints = () => {
             longitude: longitude,
             city: cityToData,
             uf: uf,
-            "street": "-",
-            "number": "-",
-            "cep": "-",
+            street: "-",
+            number: "-",
+            cep: "00000000",
             items: selectedItems
         }
         await api.post('/points', myData);
-        alert('FDP');
+        alert('Ponto cadastrado com sucesso!');
         history.push('/');
     }
     return (
